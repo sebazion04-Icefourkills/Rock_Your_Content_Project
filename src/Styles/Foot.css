@@ -1,0 +1,83 @@
+
+/*  SECCIÓN FOOTER */
+/* ======================================================= */
+
+.Footer {
+  box-sizing: border-box;
+  
+  /* De Figma: 114px de altura*/
+  height: 114px;
+  width: 100%;
+  
+  /* Añadimos margen superior para separarlo de la sección Marcas */
+  margin-top: 130px; 
+
+  /* Flexbox para alinear el contenido (Logo y Redes) */
+  display: flex;
+  justify-content: space-between; /* Empuja el logo a la izquierda y las redes a la derecha */
+  align-items: center;
+  
+  /* Padding lateral para simular el offset del logo y la posición de las redes */
+  padding: 0 149px; 
+  
+  /* Hace que cualquier texto directo en el footer sea blanco */
+  color: #FFFFFF;
+}
+
+
+/* Lado Izquierdo: Logo */
+
+
+.footer-left {
+  /* No necesita estilos de layout, solo contenedor del logo */
+  display: flex;
+  align-items: center;
+}
+
+.footer-left .logo-img {
+  /* Ajuste de altura o ancho si es necesario, basado en el espacio disponible */
+  height: 100px; /* Ajuste para que ocupe casi toda la altura del footer */
+  width: 161px; /* Ancho según Figma */
+  object-fit: contain;
+}
+
+
+/* Lado Derecho: Contenedor de Íconos */
+
+
+.footer-right {
+  /* Contenedor de los íconos */
+  display: flex;
+  gap: 15px; /* Espacio entre los íconos (aprox. 84px de diferencia en Figma) */
+  align-items: center;
+}
+
+/* Botón de Ícono de Red Social */
+.footer-right .icon-btn {
+  box-sizing: border-box;
+  
+  /* De Figma: 50px x 50px */
+  width: 50px;
+  height: 50px;
+  
+  /* Fondo #FF0080 y borde negro para el ícono */
+  background-color: #FF0080; 
+  border: 1px solid #000000;
+  
+  /* Centrado del ícono (FaInstagram, FaWhatsapp, etc.) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Estilo visual */
+  color: #FFFFFF; /* Color del ícono (blanco) */
+  font-size: 24px; /* Tamaño del ícono, ajustado visualmente */
+  text-decoration: none;
+  border-radius: 5px; /* Pequeño radio de borde para suavizar */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-right .icon-btn:hover {
+  background-color: #C00060; /* Color más oscuro al pasar el mouse */
+}

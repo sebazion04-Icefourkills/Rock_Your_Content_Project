@@ -1,0 +1,92 @@
+
+/*   SECCIÓN SOBRE NOSOTROS       */
+
+
+.about-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;  /* Ajustable según márgenes reales */
+}
+
+.about-content {
+  width: 100%;
+  max-width: 1460px;   /* el ANCHO real del fondo */
+  min-height: 817px;   /* altura Figma */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  /* Previene que se mueva todo lo anterior */
+  overflow: hidden;
+}
+
+
+/*   COLUMNA IZQUIERDA (Texto)    */
+/* =============================== */
+
+.about-text-column {
+  width: 725px;                /* medida exacta Figma */
+  padding-left: 140px;          /* alineación Figma */
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.section-subtitle {
+  font-family: "Instrument Sans";
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.about-title-main {
+  width: 531px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: 0.08em;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.about-text-body {
+  width: 556px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.08em;
+  color: #000;
+}
+
+
+/*   COLUMNA DERECHA (Video)      */
+/* =============================== */
+
+.about-visual-column {
+  width: 480px;           /* según Figma */
+  position: relative;
+  margin-right: 120px;     /* alineación espejo */
+  margin-top: 30px;
+}
+
+/* CUADRANTE DEL VIDEO */
+.about-video-wrapper {
+  width: 480px;
+  height: 614px;
+  border: 2px solid #000;
+  position: relative;
+  background: black;
+}
+
+.about-video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+

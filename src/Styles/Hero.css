@@ -1,0 +1,201 @@
+
+/*SECCIÓN HERO */
+
+/* ======================================================= */
+
+.hero-section {
+  /* La altura total del Hero, ajustada para restar la altura del Header (114px).
+     Usamos min-height para que se adapte mejor, pero con el valor entre 737px - 114px = 623px. (puede haber cambios entre 623 a 720)
+     En Figma, el hero comienza en la posición 'top: 83px', así que ajustaremos la altura. 
+    Usamos 700px como altura base para que sea visualmente grande. */
+
+
+  min-height: 700px;
+  
+  /* Esto asegurará que el contenido de hero se extienda y ocupe el espacio */
+
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+/* Contenedor principal de las dos columnas: Texto (izquierda) y Logo (derecha) */
+.hero-content {
+  display: flex;
+  height: 100%; /* Ocupa toda la altura del hero */
+}
+
+
+
+/* ------------------------------------------------------- */
+/* Columna de Texto (.hero-text) */
+/* ------------------------------------------------------- */
+
+.hero-text {
+  /* Ancho de la columna de texto. */
+
+  width: 100%;
+  padding-top: 50px; /* Separación inicial con el Header */
+  
+  /* Flexbox para apilar y espaciar los elementos internos */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+}
+
+
+
+/* Títulos principales (h1) */
+.hero-text h1 {
+  /* De Figma: font-size: 60px, line-height: 73px, font-weight: 700 */
+  font-family: Glacial Indifference, sans-serif;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 1.2; /* Ajustado para mejor legibilidad */
+  color: #FFFFFF;
+  margin: 0; /* Reiniciamos los márgenes por defecto */
+  margin-bottom: 0px;
+  
+  /* Text shadow de Figma */
+  text-shadow: -10px 6px 3px #000000;
+}
+
+/* Párrafo de descripción */
+.hero-text p {
+  /* De Figma: font-size: 20px, font-weight: 400 */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  
+  /* Margen superior para separarlo de los títulos */
+  margin-top: 50px; 
+  
+  /* El ancho del párrafo según Figma era 550px */
+  max-width: 550px;
+  letter-spacing: 0.15em;
+   
+}
+.hero-text p strong {
+  font-weight: 700; /* Asignamos el peso de negrita */
+
+  /* Si necesito que el color sea diferente al del resto del párrafo, lo pones aquí */
+
+}
+/* Botón CTA (Contáctanos) */
+.hero-text .cta-button {
+  /* De Figma: width: 246px, height: 60px */
+  width: 246px;
+  height: 60px;
+  
+  /* Separación superior (aproximadamente 36px desde el párrafo) */
+  margin-top: 36px;
+  
+  /* Estilos de Figma */
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 20px;
+
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  
+  /* Tipografía del botón */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  color: #000000;
+  text-transform: uppercase;
+  
+  /* Asegura que no tenga el borde azul de Figma si era solo decorativo 
+  border: 1px solid #32E8BC; */ 
+
+  cursor: pointer;
+}
+
+/* ESTILO AL HOVER- 
+ brillo! */
+
+
+.hero-text .cta-button:hover {
+  /* Fondo blanco ligeramente más oscuro para dar profundidad */
+  background-color: #f0f0f0; 
+
+  
+  /* APLICACIÓN DEL BRILLO */
+
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8); /* Resplandor blanco */
+  
+  /* Efecto de sutil crecimiento */
+  transform: scale(1.02); 
+}
+
+/* ESTILO AL HACER CLICK (ACTIVE) - Brillo*/
+
+.hero-text .cta-button:active {
+  /* Esto crea el efecto de "brillo" blanco puro al hacer click */
+  background-color: white; 
+  
+  /* Sombra blanca y un efecto de hundimiento */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+  
+  /* Opcional: Para simular que se hunde */
+  transform: scale(0.98); 
+  
+  /* Puedes cambiar el color del texto para contrastar si lo necesitas */
+  /* color: black; */
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* Columna del Logo Grande*/
+/* ------------------------------------------------------- */
+
+.hero-logo {
+  /* Ancho de la columna de la imagen grande (50% restante o mas) */
+  width: 70%;
+  
+  /* Para colocar la imagen con mayor libertad, como en Figma */
+  position: relative; 
+  
+  
+}
+
+/* Imagen del logo grande dentro de la columna */
+.hero-logo .RockLogo-img {
+  /* Colocamos la imagen de forma absoluta DENTRO de la columna (relativa) */
+  position: absolute;
+  
+  
+  /* Altura es de 700px, usamos el 100% de la columna */
+  height: 700px; 
+  width: auto; 
+  
+  /* Ajuste visual basado en la imagen */
+  top: -30px; 
+  right: 30px; /* Coloca la imagen en la esquina superior derecha de la columna */
+  
+  /* Evita que la imagen se deforme al llenar el espacio */
+  object-fit: cover; 
+}
+
+
+.hero-text {
+  width: 60%;
+  padding-top: 80px;
+  
+  /* MARGEN DE ALINEACIÓN ADICIONAL */
+  
+  padding-left: 92px; /* 142px (Figma) - 50px (padding de .landing-page) */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

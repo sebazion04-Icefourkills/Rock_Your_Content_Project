@@ -1,0 +1,85 @@
+
+/* NAVEGACIÓN (NavBar) */
+
+/* ======================================================= */
+
+.navbar {
+  /* La altura total de la barra, según Figma */
+  height: 114px; 
+  
+  /* Flexbox: Permite alinear horizontal y verticalmente */
+  display: flex;
+  
+  /* Alinea el contenido (logo y redes) al centro verticalmente */
+  align-items: center; 
+  
+  /* Coloca el logo a la izquierda y las redes a la derecha */
+  justify-content: space-between; 
+  
+  /* El padding lateral es importante para alinear con el diseño.
+     Según Figma, el Logo empieza en 148px, y el último ícono en 1214px (en un total de 1440px nosotros usamos ahora 1460px).
+      
+  */
+  padding: 75px 120px;
+  
+  /* Asegura que el padding no afecte la altura total */
+  box-sizing: border-box; 
+}
+
+
+
+
+
+
+
+/* Logo */
+/* ------------------------------------------------------- */
+
+.navbar-left .logo-img {
+  /* Según Figma: ancho 95px, alto 114px (la altura del navbar) */
+  width: 130px; 
+  height: 160px; 
+  object-fit: contain; /* Asegura que la imagen se ajuste */
+
+  /* El left: 148px se maneja con el padding del .navbar */
+}
+
+
+
+
+
+/* Íconos de Redes (navbar-right) */
+/* ------------------------------------------------------- */
+
+.navbar-right {
+  display: flex;
+  gap: 20px; /* Espacio entre los íconos */
+
+  margin-left: auto;
+
+  margin-right: 40px;
+}
+
+.icon-btn {
+  /* Los íconos tienen 70px x 70px y borde blanco */
+  width: 70px;
+  height: 70px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%; /* Los hace circulares */
+  
+  /* Centra el icono dentro del círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Color del icono y tamaño */
+  color: white; 
+  font-size: 30px; /* Tamaño del icono */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  transition: background-color 0.3s; /* Efecto suave al pasar el mouse */
+}
+
+/* Estilos al pasar el mouse */
+.icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}

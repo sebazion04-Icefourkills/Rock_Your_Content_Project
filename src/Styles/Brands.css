@@ -1,0 +1,81 @@
+
+/* SECCIÓN MARCAS (Brands) */
+/* ======================================================= */
+
+.brands-section {
+
+  /* De Figma: La altura total es ~736px */
+  min-height: 36px; 
+
+
+  /* Flexbox para centrar el título y apilar los elementos */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start;
+
+}
+
+/* ------------------------------------------------------- */
+/* Título Principal */
+/* ------------------------------------------------------- */
+
+.brands-section .section-title {
+  /* De Figma: Nunito 30px, 700, line-height: 41px, centrado */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  
+  /* Marcas que confiaron en nuestra forma de crear */
+  color:white;
+  
+  text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  /* Centrado y ancho */
+  margin: 0 auto;
+  max-width: 661px; /* Ancho del texto según Figma */
+  
+  /* Distancia desde la parte superior (60px del padding + 19px de margen) */
+  margin-top: 70px; 
+  margin-bottom: 50px; /* Espacio antes del contenedor de logos/testimonios */
+}
+
+/* ------------------------------------------------------- */
+/* Contenedor de Logos / Testimonios */
+/* ------------------------------------------------------- */
+
+.logos-container {
+  /* De Figma: ancho 1157px, alto 461.46px, fondo D9D9D9 (Gris) */
+  width: 1157px;
+  height: 461px;
+  background-color: #D9D9D9;
+  
+  /* Centrado en la sección */
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+  /* Para centrar el texto "Logos o casos de éxito" internamente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para el texto de placeholder (Logos o casos de éxito) */
+.logos-container h3 {
+  /* De Figma: Instrument Sans 50px, 700, centrado */
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.08em;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  
+  /* El ancho es 643px según Figma */
+  max-width: 643px; 
+}

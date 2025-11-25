@@ -1,0 +1,165 @@
+
+/* SECCIÓN METODOLOGÍA */
+/* ======================================================= */
+
+.section-metodologia {
+  /* De Figma: La sección tiene background #8507E7 */
+  
+  
+  /* La altura total de la sección, según Figma, es ~958px */
+
+  min-height: 900px; 
+  
+  /* Flexbox para apilar los elementos (Título, Párrafo, Grid) */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente (títulos y párrafos) */
+  
+  /* Padding superior/inferior para el espacio */
+  padding: 60px 0 100px 0; 
+
+  margin-top: 20px; /* Esto es para dar ajuste y asegurar que no haya un espacio con la sección anterior */
+  
+  
+}
+
+
+
+/* Título Pequeño (Metodología) y Título Principal */
+/* ------------------------------------------------------- */
+
+.section-metodologia .section-subtitle,
+.section-metodologia .section-title {
+  color: white; /* Todos los textos de la sección son blancos */
+  text-align: center;
+  max-width: 900px; /* Ancho máximo para que no se extienda demasiado */
+  margin: 0 auto;
+}
+
+/* Subtítulo (Metodología) */
+
+.section-metodologia .section-subtitle {
+  /* De Figma: font-size: 25px, font-weight: 700, letter-spacing: 0.08em */
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  margin-top: 55px; /* Separación desde la parte superior (875px - 818px = 57px) */
+  margin-bottom: 20px;
+}
+
+/* Título Principal */
+.section-metodologia .section-title {
+  /* De Figma: font-size: 40px, line-height: 55px, font-weight: 700 */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: 0.08em;
+  max-width: 725px; /* Ancho del texto según Figma */
+  color: black; /* El texto principal */
+}
+
+/* Párrafo central (Basamos nuestro trabajo...) */
+
+.section-metodologia .section-description {
+
+  /* De Figma: font-size: 20px, font-weight: 700 */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.08em;
+  color: white;
+
+  /*margin-top: 40px;  Separación con el título principal */
+
+  margin-bottom: 80px; /* Separación con las tarjetas */
+  max-width: 578px; /* Ancho del texto según Figma */
+
+  margin: 30px auto 80px auto; /* px arriba, auto lados (centrado), 80px abajo */
+  
+  max-width: 578px; /* Ancho del texto según Figma */
+
+  text-align: center;
+}
+
+
+
+/*  Contenedor de Servicios (GRID) */
+/* ------------------------------------------------------- */
+
+.service-grid {
+
+  /* Grid para las 3 columnas */
+  display: grid;
+  
+  /* Define 3 columnas de igual ancho, separadas por 20px (gap) */
+  grid-template-columns: repeat(3, 340px); /* 3 columnas de 340px (ancho de tarjeta de Figma) */
+  gap: 120px; /* Espacio entre las tarjetas */
+  
+  /* Centrar el grid en la pantalla */
+  width: 100%;
+  max-width: 1460px; /* Asegura que se mantenga dentro del límite */
+  padding: 0 50px; /* El padding de la landing page */
+  box-sizing: border-box;
+}
+
+
+
+/* Tarjetas Individuales (service-card) */
+/* ------------------------------------------------------- */
+
+.service-card {
+  /* De Figma: 400px de alto, borde blanco, radio 5px */
+
+  height: 400px;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 10px 20px; /* Padding interno */
+  
+  /* Flexbox para apilar y centrar el contenido (título y párrafo) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Título de la tarjeta (h4) */
+.service-card h4 {
+  /* De Figma: font-size: 25px, font-weight: 700 */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Línea divisora (simulada con un borde inferior o un div) */
+.service-card h4::after {
+  content: "";
+  display: block;
+  width: 200px; /* Ancho de la línea (ajustado visualmente) */
+  height: 5px; /* Grosor de la línea */
+  background-color: white;
+  box-shadow: -8px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 15px auto 1px auto; /* Centra la línea y da espacio */
+}
+
+/* Párrafo de la tarjeta (p) */
+.service-card p {
+  /* De Figma: font-size: 20px, font-weight: 700 */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: white;
+  margin: 5;
+  max-width: 313px; /* Ancho del párrafo de Figma */
+  text-align: center;
+}

@@ -1,0 +1,151 @@
+/* ======================================================= */
+/* SECCIÓN CTA FINAL (Call) */
+/* ======================================================= */
+
+.cta-section {
+  /* De Figma: Altura 700px */
+  min-height: 700px;
+  
+  /* Flexbox para centrar y apilar el título y la caja CTA */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alineación inicial */
+  
+  /* Padding superior/inferior para el espacio */
+padding-top: 150px;
+ 
+  
+  /* Para que el ancho total sea respetado */
+  width: 100%;
+  box-sizing: border-box;
+ 
+}
+
+/* ------------------------------------------------------- */
+/* Título Principal de la Sección */
+/* ------------------------------------------------------- */
+
+.cta-title {
+  /* De Figma: Nunito 45px, 700, centrado */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  
+  /* Color del texto */
+  color: #000000;
+  text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+  
+  /* Márgenes para centrar y separar */
+  margin: 0 auto;
+  max-width: 986px; /* Ancho del título según Figma */
+  margin-bottom: 80px; /* Separación con la caja de Agendar */
+}
+
+/* Estilo para la palabra "Rockear" */
+.cta-title .Gistesy {
+  /* Asumo que "Rockear" tiene un estilo distinto*/
+  color: #FF0080;
+  /* "Gistesy" es una fuente que debo importarla */
+  /* font-family: 'Gistesy', cursive; */
+}
+
+
+/* Caja de Cita / Agendar Reunión (CTA Box) */
+
+
+.appointment-info {
+  /* De Figma: Ancho 511px, Altura 411px */
+  width: 511px;
+  min-height: 411px;
+  box-sizing: border-box;
+  
+  /* Fondo Morado y Sombra Distintiva */
+  background: #8507E7;
+  box-shadow: -10px 10px 0px 3px #000000; /* Sombra desplazada */
+  
+  /* Contenido interno centrado y apilado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 5px; /* Un poco de borde redondeado si es necesario */
+}
+
+/* Subtítulo (Agendá tu reunión / Coordinemos una charla) */
+.appointment-info h3 {
+  /* De Figma: Nunito 35px, 700 */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 48px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  margin: 0;
+  max-width: 463px; /* Ancho del texto */
+  margin-bottom: 15px; 
+}
+
+/* Párrafo de descripción (Elegí el día y horario que mejor te quede...) */
+.appointment-info p {
+  /* De Figma: Nunito 20px, 700 */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  margin: 0;
+  max-width: 446px; 
+  margin-bottom: 50px; /* Espacio antes del botón */
+}
+
+
+/* Botón CTA (Agenda Ahora) */
+
+.appointment-button {
+  /* De Figma: Ancho 260.71px, Alto 63.22px, Borde 4px Negro */
+  width: 260px;
+  height: 63px;
+  
+  background: #FFFFFF;
+  border: 4px solid #000000;
+  box-shadow: -5px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  cursor: pointer;
+  
+  /* Estilo del texto del botón (AGENDA AHORA) */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.15em;
+  color: #000000;
+  text-transform: uppercase;
+  
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    filter 0.25s ease;
+}
+
+.appointment-button:hover {
+  background-color: #FF0080; /* se tiñe el botón */
+  border-color: #FFFFFF;     /* borde blanco */
+ 
+  
+  /* Efecto glow suave alrededor */
+  box-shadow:
+    0 0 12px rgba(255, 0, 128, 0.6),   /* brillo rosa externo */
+    -3px 3px 4px rgba(0, 0, 0, 0.25);  /* mantiene sombra original */
+
+  transform: translate(-2px, 2px);
+  color:#FFFFFF; /* mantiene el texto negro */
+}
+

@@ -1,0 +1,60 @@
+
+
+
+/*  FONDO IMAGEN FIGMA*/
+
+/* ======================================================= */
+
+
+
+/* La idea es incluir la imagen como fondo. 
+Se tuvo que adaptar la imagen a 1460 px de ancho X 4400 px de largo. 
+La imagen como fondo completa queda muy feo, entonces se adapto a como se ve en figma al iniciar. 
+Para ello nos aseguramos de que el body tenga márgenes (dos columnas) y sea negro */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  /* El HTML también debe ser full width */
+  width: 100%; 
+  min-height: 100vh;
+}
+
+/* Asegurar que el contenedor de React ocupe todo el ancho */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex; /* para que los hijos sigan la estructura */
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente todo el contenido de la app */
+}
+
+/* El nuevo contenedor que tiene la IMAGEN DE FONDO y se centra en la pantalla */
+.layout-bg {
+    
+  max-width: 1460px; 
+  margin: 0 auto; /* El #root ahora ayuda a que esto funcione mejor */
+  min-height: 4400px; 
+
+  background-image: url('/Fondo.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center top ; 
+
+  /* Para redondia los bordes del fondo y darle un efecto */
+  border-radius: 10px; 
+
+  /* Esto asegura que si el contenido hijo se desborda, también se redondee */
+  overflow: hidden;
+}
+
+
+.landing-page {
+  width: 100%; 
+  padding: 0 50px; 
+  box-sizing: border-box; 
+
+}
+
